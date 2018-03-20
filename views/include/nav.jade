@@ -1,0 +1,16 @@
+ul
+  li
+    if content == 'home' 
+      a(href='/home').mainnav.active Home
+    else 
+      a(href='/home').mainnav Home
+  li
+    if content == 'story' 
+      a(href='/story').mainnav.active Story of Us
+    else 
+      a(href='/story').mainnav Story of Us
+  li
+    if content == 'wedding' 
+      a(href='/wedding').mainnav.active Wedding
+    else
+      a(href='/wedding').mainnav Wedding

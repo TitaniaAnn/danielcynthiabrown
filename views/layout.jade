@@ -1,0 +1,27 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/includes.css')
+    link(rel='stylesheet', href='/stylesheets/nav.css')
+    block style
+    
+    script(type='text/javascript', src='/javascripts/cssfx.min.js')
+    script(type='text/javascript', src='/javascripts/jquery-1.8.2.min.js')
+    block script
+    
+  body
+    #body
+    #main
+      header#header
+        include include/header
+
+      nav#nav
+        include include/nav
+
+      #content
+        block content
+
+      footer#footer
+        include include/footer

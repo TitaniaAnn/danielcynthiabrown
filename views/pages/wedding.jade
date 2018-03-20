@@ -1,0 +1,56 @@
+extends ../layout
+
+block style
+	link(rel='stylesheet', href='/stylesheets/page.css')
+	link(rel='stylesheet', href='/stylesheets/content.css')
+	link(rel='stylesheet', href='/stylesheets/cardflip.css')
+	
+block script
+	script(type='text/javascript', src='/javascripts/page.js')
+	
+block content
+	hgroup#pageheader
+		h1 Daniel & Cynthia Brown's Wedding
+		h2 
+			img(src='/images/accents/flower-flourish-left.png').flourish 
+			| September 1st, 2012 
+			img(src='/images/accents/flower-flourish-right.png').flourish
+		h3 Yaquina Bay National Park, Newport Oregon
+
+	#pagemain 
+		nav#pagenav
+			ul
+				li
+					if content =='ceremony'
+						a(href='/wedding/ceremony').pagenav.active Ceremony
+					else
+						a(href='/wedding/ceremony').pagenav Ceremony
+				li
+					if content == 'video'
+						a(href='/wedding/video').pagenav.active Video
+					else
+						a(href='/wedding/video').pagenav Video
+				li
+					if content == 'pictures'
+						a(href='/wedding/pictures').pagenav.active Pictures
+					else
+						a(href='/wedding/pictures').pagenav Pictures
+				li
+					if content == 'cards'
+						a(href='/wedding/cards').pagenav.active Cards
+					else
+						a(href='/wedding/cards').pagenav Cards
+
+		#pagecontent
+			if content =='ceremony'
+				#ceremony.pagemain
+					include wedding/ceremony
+			if content == 'video'
+				#video.pagemain
+					include wedding/video
+			if content == 'pictures'
+				#pictures.pagemain
+					include wedding/picture
+			if content == 'cards'
+				#cards.pagemain
+					include wedding/card
