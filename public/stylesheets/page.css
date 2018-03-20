@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Coventry;
+  font-style: normal;
+  src: url("/fonts/CoventryScriptFLF.ttf");
+}
+#pageheader {
+  background: #d6dee1;
+  background: rgba(214,222,225,0.6);
+  border-radius: 15px;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+#pageheader h1 {
+  font-family: Coventry;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin: 5px 0px;
+}
+#pageheader h2 {
+  font-family: Coventry;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+#pageheader h3 {
+  font-family: Coventry;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+#pageheader img {
+  vertical-align: top;
+}
+#pagemain {
+  display: block;
+}
+#pagenav {
+  background: none;
+  width: 15%;
+  float: left;
+  display: block;
+}
+#pagenav ul {
+  margin: 0px;
+  padding: 0px;
+}
+#pagenav ul li {
+  display: block;
+}
+#pagenav ul li a {
+  display: block;
+  padding: 10px 15px 5px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #3b283b;
+  background: #c4d3be;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top: outset 1px #f9ebdf;
+  border-left: outset 1px #f9ebdf;
+  border-bottom: outset 1px #f9ebdf;
+}
+#pagenav ul li a:hover,
+#pagenav ul li a.active {
+  color: #3b283b;
+  background: #f9ebdf;
+  background: rgba(249,235,223,0.8);
+  border-top: outset 1px #c4d3be;
+  border-left: outset 1px #c4d3be;
+  border-bottom: outset 1px #c4d3be;
+}
+#pagecontent {
+  display: block;
+  float: left;
+  background: #f9ebdf;
+  background: rgba(249,235,223,0.8);
+  border-top: outset 1px #c4d3be;
+  border-right: outset 1px #c4d3be;
+  border-bottom: outset 1px #c4d3be;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  min-height: 250px;
+  width: 84%;
+}

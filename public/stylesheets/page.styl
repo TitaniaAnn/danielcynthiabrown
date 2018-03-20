@@ -1,0 +1,120 @@
+@font-face
+	font-family Coventry
+	font-style normal
+	src url(/fonts/CoventryScriptFLF.ttf)
+
+// Page Header variables
+hd-bg-color = rgb(214, 222, 225)
+hd-bg-color-trans = rgba(214, 222, 225, 0.6)
+hd-padding = 0px 0px 10px 0px
+hd-margin = 10px
+hd-font = Coventry
+hd-fnt-size = 50px
+
+// Page Navigation variables
+nav-bg-color = none
+nav-width = 15%
+li-padding = 10px 15px 5px 20px
+li-ft-size = 16px
+li-ft-color = #3b283b
+li-bg-color = rgb(196, 211, 190)
+li-bg-color-trans = rgba(196, 211, 190, 0.8)
+li-border = outset 1px rgb(249, 235, 223)
+li-act-ft-color = #3b283b
+li-act-bg-color = rgb(249, 235, 223)
+li-act-bg-color-trans = rgba(249, 235, 223, 0.8)
+li-act-border = outset 1px rgb(196, 211, 190)
+
+// Page Content variables
+ct-bg-color = rgb(249, 235, 223)
+ct-bg-color-trans = rgba(249, 235, 223, 0.8)
+ct-border = outset 1px rgb(196, 211, 190)
+ct-margin = 0px 0px 0px 115px
+ct-width = 84%
+ct-min-height = 250px;
+
+// Page Header
+#pageheader
+	background hd-bg-color
+	background hd-bg-color-trans
+	border-radius 15px
+	margin hd-padding
+	padding hd-margin
+
+#pageheader h1
+	font-family hd-font
+	font-size hd-fnt-size
+	font-weight bold
+	text-align center
+	text-decoration underline
+	margin 5px 0px 
+
+#pageheader h2
+	font-family hd-font
+	font-size 36px
+	font-weight bold
+	text-align center
+	margin 0px
+	
+#pageheader h3
+	font-family hd-font
+	font-size 28px
+	font-weight bold
+	text-align center
+	margin 0px
+
+#pageheader img
+	vertical-align top
+	
+#pagemain
+	display block
+	
+// Page Navigation
+#pagenav
+	background nav-bg-color
+	width nav-width
+	float left
+	display block
+
+#pagenav ul
+	margin 0px
+	padding 0px
+	
+#pagenav ul li
+	display block
+
+#pagenav ul li a
+	display block
+	padding li-padding
+	font-weight bold
+	font-size li-ft-size
+	color li-ft-color
+	background li-bg-color
+	border-bottom-left-radius 15px
+	border-top-left-radius 15px
+	border-top li-border
+	border-left li-border
+	border-bottom li-border
+	
+#pagenav ul li a:hover, #pagenav ul li a.active
+	color li-act-ft-color
+	background li-act-bg-color
+	background li-act-bg-color-trans
+	border-top li-act-border
+	border-left li-act-border
+	border-bottom li-act-border
+	
+// Page Content
+#pagecontent
+	display block
+	float left
+	background ct-bg-color
+	background ct-bg-color-trans
+	border-top ct-border
+	border-right ct-border 
+	border-bottom ct-border
+	border-top-right-radius 15px
+	border-bottom-right-radius 15px
+	border-bottom-left-radius 15px
+	min-height ct-min-height
+	width ct-width

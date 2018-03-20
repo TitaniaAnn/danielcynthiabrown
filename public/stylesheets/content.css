@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Coventry;
+  font-style: normal;
+  src: url("/fonts/CoventryScriptFLF.ttf");
+}
+#contentheader {
+  padding: 15px;
+}
+#contentheader img {
+  vertical-align: top;
+}
+#contentheader h1 {
+  margin: 0px;
+  text-align: center;
+  font-family: Coventry;
+  font-size: 36px;
+}
+#contentmain {
+  padding: 15px;
+}

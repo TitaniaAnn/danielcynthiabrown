@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgba(215,207,188,0.6);
+}
+a {
+  color: #00b7ff;
+}
+#body {
+  position: fixed;
+  background-color: #9cd0e8;
+  background-color: rgba(156,208,232,0.6);
+  background-image: url("/images/Yaquina_Bridge_02.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 0.65;
+}
+#main {
+  position: relative;
+  margin: 25px auto;
+  width: 1000px;
+  display: block;
+  border-radius: 15px;
+  background: #88aae9;
+  background: rgba(136,170,233,0.8);
+  z-index: 1;
+}
+#content {
+  padding: 15px;
+  display: block;
+}
+.flourish {
+  width: 100px;
+  height: auto;
+}

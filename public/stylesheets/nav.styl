@@ -1,0 +1,57 @@
+
+nav-bg-color = #3b283b
+nav-bg-color-trans = #3b283b
+
+lnk-bg-color = rgb(196, 211, 190)
+lnk-bg-color-trans = rgba(196, 211, 190, 0.8)
+lnk-ft-color = #3b283b
+lnk-ft-size = 16px
+lnk-brd = outset 1px rgb(136, 170, 233)
+
+lnk-act-bg-color = rgb(136, 170, 233)
+lnk-act-bg-color-trans = rgba(136, 170, 233, 0.8)
+lnk-act-ft-color = #3b283b
+lnk-act-ft-size = 16px
+lnk-act-brd = outset 1px rgb(196, 211, 190)
+
+#nav 
+	display block
+	background nav-bg-color
+	padding-left 15px
+	padding-right 15px
+	padding-top 10px
+	padding-bottom 0px
+
+#nav ul 
+	display inline-block
+	margin 1px 1px 0px 1px
+	padding 1px 1px 0px 1px
+	
+#nav ul li 
+	display inline-block
+	list-style-type none
+	margin 1px 1px 0px 1px
+
+#nav ul li a 
+	display block
+	padding 10px 20px 5px 20px
+	background lnk-bg-color
+	//background lnk-bg-color-trans
+	color lnk-ft-color
+	text-decoration none
+	font-weight bold
+	font-size lnk-ft-size
+	border-top-right-radius 15px
+	border-top-left-radius 15px
+	border-top lnk-brd
+	border-right lnk-brd
+	border-left lnk-brd
+
+#nav ul li a:hover, #nav ul li a.active 
+	color lnk-act-ft-color
+	background lnk-act-bg-color
+	border-top-right-radius 15px
+	border-top-left-radius 15px
+	border-top lnk-act-brd
+	border-right lnk-act-brd
+	border-left lnk-act-brd

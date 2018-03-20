@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Regency;
+  font-style: normal;
+  src: url("/fonts/RegencyScriptFLF.ttf");
+}
+header {
+  display: block;
+  background: #88aae9;
+  background: rgba(136,170,233,0.6);
+  padding: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+header h1,
+footer {
+  clear: both;
+  padding: 15px;
+}
+#foot {
+  padding: 15px;
+  display: block;
+  background: #d6dee1;
+  background: rgba(214,222,225,0.6);
+  border-radius: 15px;
+}
+footer address {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer h4 {
+  margin: 2px;
+  font-size: 30px;
+  font-family: Regency;
+}
+footer img {
+  vertical-align: sub;
+}
+nav#security {
+  display: block;
+  width: 150px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#security ul {
+  padding: 5px;
+  display: block;
+  background: rgba(196,211,190,0.8);
+  border-radius: 5px;
+}
+#security li {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #c4d3be;
+}
